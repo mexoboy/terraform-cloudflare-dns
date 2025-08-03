@@ -1,5 +1,6 @@
 module "dns" {
-  source = "../.."
+  source = "mexoboy/dns/cloudflare"
+  version = "v1.0.0"
 
   cloudflare_dns_records = [
     {
