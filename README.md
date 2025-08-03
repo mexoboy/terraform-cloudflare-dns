@@ -14,7 +14,8 @@ A Terraform module for managing Cloudflare DNS records with ease.
 
 ```hcl
 module "dns" {
-  source = "github.com/mexoboy/terraform-cloudflare-dns"
+  source = "mexoboy/dns/cloudflare"
+  version = "v1.0.0"
 
   cloudflare_dns_records = [
     {
@@ -29,7 +30,8 @@ module "dns" {
 
 ```hcl
 module "dns" {
-  source = "github.com/mexoboy/terraform-cloudflare-dns"
+  source = "mexoboy/dns/cloudflare"
+  version = "v1.0.0"
 
   cloudflare_dns_records = [
     # example.com zone
